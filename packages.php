@@ -23,6 +23,7 @@ $packages = array(
     'files' => null
   ),
 
+/*
   array(
     'type' => 'plugin',
     'slug' => 'antispam',
@@ -399,7 +400,7 @@ $packages = array(
       'post.php'
     ]
   ),
-
+*/
   array(
     'type' => 'theme',
     'slug' => 'nimble',
@@ -411,11 +412,11 @@ $packages = array(
     'license' => 'MIT',
     'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/theme/nimble/preview.png',
     'version' => array(
-      'tag' => '0.1.0',
+      'tag' => '0.1.1',
       'security' => false,
       'compatible' => '*',
       'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/theme/nimble/0.1.0.zip'
+      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/theme/nimble/0.1.1.zip'
     ),
     'dependencies' => array(),
     'files' => [
