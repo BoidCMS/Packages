@@ -2,6 +2,7 @@
 
 $packages = array(
 
+/*
   array(
     'type' => 'plugin',
     'slug' => 'amp',
@@ -11,19 +12,17 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Google, Speed',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/amp/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/amp/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => null
   ),
 
-/*
   array(
     'type' => 'plugin',
     'slug' => 'antispam',
@@ -33,13 +32,12 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Dev, Security',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/antispam/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/antispam/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -47,6 +45,7 @@ $packages = array(
       'src/Akismet.php'
     ]
   ),
+*/
 
   array(
     'type' => 'plugin',
@@ -57,13 +56,12 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Dev, AJAX',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/api/preview.png',
+    'preview' => true,
     'version' => array(
-      'tag' => '0.2.0',
+      'tag' => '0.2.1',
       'security' => true,
       'compatible' => '*',
-      'changelog' => 'Sensitive data exposed via API',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/api/0.2.0.zip'
+      'changelog' => 'Sensitive data exposed via API'
     ),
     'dependencies' => array(),
     'files' => [
@@ -71,6 +69,7 @@ $packages = array(
     ]
   ),
 
+  /*
   array(
     'type' => 'plugin',
     'slug' => 'backup',
@@ -80,15 +79,20 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Data, Security',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/backup/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/backup/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
-    'dependencies' => array(),
+    'dependencies' => array(
+      [
+        'type' => 'plugin',
+        'slug' => 'cron',
+        'name' => 'Plugin: CRON (cron)'
+      ]
+    ),
     'files' => [
       'plugin.php'
     ]
@@ -103,13 +107,12 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Fast, Speed',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/cache/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/cache/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -126,13 +129,12 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => '',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/contact/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/contact/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -149,13 +151,12 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Dev, Automation, Workflow',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/cron/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/cron/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -167,18 +168,17 @@ $packages = array(
     'type' => 'plugin',
     'slug' => 'disqus',
     'name' => 'Disqus',
-    'description' => '',
+    'description' => 'Disqus Commenting System Integration',
     'website' => 'https://boidcms.github.io/#/plugins/disqus',
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Comments',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/disqus/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/disqus/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -190,26 +190,19 @@ $packages = array(
     'type' => 'plugin',
     'slug' => 'draft',
     'name' => 'Draft',
-    'description' => '',
+    'description' => 'Pages Automated Publishing',
     'website' => 'https://boidcms.github.io/#/plugins/draft',
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Task, Workflow',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/draft/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/draft/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
-    'dependencies' => array(
-      [
-        'type' => 'plugin',
-        'slug' => 'cron',
-        'name' => 'Plugin: CRON (cron)'
-      ]
-    ),
+    'dependencies' => array(),
     'files' => [
       'plugin.php'
     ]
@@ -219,47 +212,68 @@ $packages = array(
     'type' => 'plugin',
     'slug' => 'feed',
     'name' => 'Feed',
-    'description' => 'XML Feed',
+    'description' => 'RSS Feed Generator',
     'website' => 'https://boidcms.github.io/#/plugins/feed',
     'author' => 'Shuaib Yusuf Shuaib',
-    'keywords' => 'RSS',
+    'keywords' => 'RSS, XML',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/feed/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/feed/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
       'plugin.php'
     ]
   ),
+  */
 
+  array(
+    'type' => 'plugin',
+    'slug' => 'markdown-editor',
+    'name' => 'Markdown Editor',
+    'description' => 'Content Formatting Using Markdown Syntax',
+    'website' => 'https://boidcms.github.io/#/plugins/markdown-editor',
+    'author' => 'Shuaib Yusuf Shuaib',
+    'keywords' => 'WYSIWYG',
+    'license' => 'MIT',
+    'preview' => true,
+    'version' => array(
+      'tag' => '0.1.0',
+      'security' => false,
+      'compatible' => '*',
+      'changelog' => 'Initial release'
+    ),
+    'dependencies' => array(),
+    'files' => null
+  ),
+
+  /*
   array(
     'type' => 'plugin',
     'slug' => 'menu',
     'name' => 'Menu',
-    'description' => '',
+    'description' => 'Customizable Menu Builder',
     'website' => 'https://boidcms.github.io/#/plugins/menu',
     'author' => 'Shuaib Yusuf Shuaib',
-    'keywords' => '',
+    'keywords' => 'Navigation, Bar',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/menu/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/menu/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
       'plugin.php'
     ]
   ),
+  */
 
   array(
     'type' => 'plugin',
@@ -270,13 +284,12 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Manager',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/modules/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/modules/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -288,18 +301,17 @@ $packages = array(
     'type' => 'plugin',
     'slug' => 'order-by',
     'name' => 'Order By',
-    'description' => '',
+    'description' => 'Effortlessly Organize Your Post Order',
     'website' => 'https://boidcms.github.io/#/plugins/order-by',
     'author' => 'Shuaib Yusuf Shuaib',
-    'keywords' => '',
+    'keywords' => 'Blog, List, Sort, Arrange',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/order-by/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/order-by/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -307,6 +319,7 @@ $packages = array(
     ]
   ),
 
+  /*
   array(
     'type' => 'plugin',
     'slug' => 'splitdb',
@@ -316,13 +329,12 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Dev, Storage, Database, Table, Row',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/splitdb/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/splitdb/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => null
@@ -337,13 +349,12 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Editor',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/plugin/trumbowyg/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/plugin/trumbowyg/0.1.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -354,19 +365,18 @@ $packages = array(
   array(
     'type' => 'theme',
     'slug' => 'visual',
-    'name' => 'Visual (Ex-Default Theme)',
-    'description' => 'The Original Theme for BoidCMS',
+    'name' => 'Visual',
+    'description' => 'Former Default Theme BoidCMS',
     'website' => 'https://boidcms.github.io/#/themes/visual',
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Old, Simple, Blog',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/theme/visual/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '1.0.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/theme/visual/1.0.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -385,13 +395,12 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Dark, Menu, Pagination',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/theme/noir/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '1.0.0',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/theme/noir/1.0.0.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -400,7 +409,7 @@ $packages = array(
       'post.php'
     ]
   ),
-*/
+
   array(
     'type' => 'theme',
     'slug' => 'nimble',
@@ -410,13 +419,12 @@ $packages = array(
     'author' => 'Shuaib Yusuf Shuaib',
     'keywords' => 'Dev, Dark, Simple, Semantic',
     'license' => 'MIT',
-    'preview' => 'https://cdn.jsdelivr.net/gh/BoidCMS/Packages/theme/nimble/preview.png',
+    'preview' => true,
     'version' => array(
       'tag' => '0.1.1',
       'security' => false,
       'compatible' => '*',
-      'changelog' => 'Initial release',
-      'zip' => 'https://raw.githubusercontent.com/BoidCMS/Packages/master/theme/nimble/0.1.1.zip'
+      'changelog' => 'Initial release'
     ),
     'dependencies' => array(),
     'files' => [
@@ -425,6 +433,7 @@ $packages = array(
       'post.php'
     ]
   )
+  */
 
 );
 
