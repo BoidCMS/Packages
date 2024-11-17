@@ -297,6 +297,7 @@ $packages = array(
     ]
   ),
 
+  /*
   array(
     'type' => 'plugin',
     'slug' => 'order-by',
@@ -319,7 +320,6 @@ $packages = array(
     ]
   ),
 
-  /*
   array(
     'type' => 'plugin',
     'slug' => 'splitdb',
