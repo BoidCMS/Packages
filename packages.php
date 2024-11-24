@@ -2,7 +2,6 @@
 
 $packages = array(
 
-/*
   array(
     'type' => 'plugin',
     'slug' => 'amp',
@@ -23,6 +22,7 @@ $packages = array(
     'files' => null
   ),
 
+  /*
   array(
     'type' => 'plugin',
     'slug' => 'antispam',
