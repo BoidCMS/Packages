@@ -140,7 +140,7 @@ $packages = array(
     'files' => [
       'plugin.php'
     ]
-  ),
+  ),*/
 
   array(
     'type' => 'plugin',
@@ -164,7 +164,7 @@ $packages = array(
     ]
   ),
 
-  array(
+  /*array(
     'type' => 'plugin',
     'slug' => 'disqus',
     'name' => 'Disqus',
@@ -291,13 +291,17 @@ $packages = array(
       'compatible' => '*',
       'changelog' => 'Initial release'
     ),
-    'dependencies' => array(),
+    'dependencies' => array(
+      [
+        'type' => 'plugin',
+        'slug' => 'cron'
+      ]
+    ),
     'files' => [
       'plugin.php'
     ]
   ),
 
-  /*
   array(
     'type' => 'plugin',
     'slug' => 'order-by',
@@ -320,6 +324,7 @@ $packages = array(
     ]
   ),
 
+  /*
   array(
     'type' => 'plugin',
     'slug' => 'splitdb',
@@ -338,20 +343,20 @@ $packages = array(
     ),
     'dependencies' => array(),
     'files' => null
-  ),
+  ),*/
 
   array(
     'type' => 'plugin',
     'slug' => 'trumbowyg',
     'name' => 'Trumbowyg',
-    'description' => '',
+    'description' => 'Trumbowyg WYSIWYG Editor Integration',
     'website' => 'https://boidcms.github.io/#/plugins/trumbowyg',
     'author' => 'Shuaib Yusuf Shuaib',
-    'keywords' => 'Editor',
+    'keywords' => '',
     'license' => 'MIT',
     'preview' => true,
     'version' => array(
-      'tag' => '0.1.0',
+      'tag' => '1.0.0',
       'security' => false,
       'compatible' => '*',
       'changelog' => 'Initial release'
@@ -362,7 +367,7 @@ $packages = array(
     ]
   ),
 
-  array(
+  /*array(
     'type' => 'theme',
     'slug' => 'visual',
     'name' => 'Visual',
